@@ -88,8 +88,53 @@ func (c *CheckOutSys) getBalance() float64 {
 }
 
 func main() {
-    // Example usage
-    checkout := CheckOutSys{}
+    fmt.Print("Enter customer's name: ")
+		var customerName string
+		fmt.Scanln(&customerName)
+
+    fmt.Print("What did ", customerName , " buy ?")
+		var itemBought string
+		fmt.Scanln(&itemBought)
+		
+		fmt.Print("How many pieces of ", itemBought,"?")
+		var numOfItemBought string
+		fmt.Scanln(&numOfItemBought)
+
+		fmt.Print("Add more item? ")
+		var moreItem string
+		fmt.Scanln(&moreItem)
+
+		fmt.Print("What did the user buy ")
+		var  itemAdded string
+		fmt.Scanln(&itemAdded)
+
+		fmt.Print("How many pieces? ")
+		var numOfItem2 string
+		fmt.Scanln(&numOfItem2)
+
+		fmt.Print("How much per unit")
+		var itemAmount int
+		fmt.Scanln(&itemAmount)
+
+		fmt.Print("Add more item? (yes/no) ")
+		var  itemAdded3 string
+		fmt.Scanln(&itemAdded3)
+
+		fmt.Print("What is your name ")
+		var  cashierName string
+		fmt.Scanln(&cashierName)
+
+		fmt.Print("How much discount will ", customerName, "get?")
+		var discount string
+		fmt.Scanln(&discount)
+
+		
+		
+		
+		
+		
+		
+		checkout := CheckOutSys{}
     checkout.setSubTotal(100)
     checkout.setDiscount(10)
     checkout.setAmountPaid(105)
